@@ -22,14 +22,11 @@ What is **0,0**? It is you archer's position. It is not validated currently, so 
 - Log of what's happening between server and it's clients textual representation in a dialog.
 - Server can be closed and run again.
 
+### Missing
+- Automatic port forwarding. In other words, if your remote IP is, for example, 123.123.123.123, and you want to start server remotely at 123.123.123.123:6666, you will have to add forwarding rule to your router manually.
+
 ### Tools Used
 - C++11 as programming language.
 - Qt Creator as a tool to build, debug the server, create UI views, write code and unit tests testing the code written. However, there a better choice would be CMake, Visual Studio, BOOST for build and unit tests organization (it is easier to make this work in cross-platform way). Still, due to time limitation, I have chosen the way which would be faster in short-term.
 - Qt as a framework to create a server, UI views, view models. Specifically, **QTcpServer** is used as a server instance which allows to listen to connections from client, and **QTcpSocket** as instance to accept incoming streams from clients, and write response to it.
 - In other words, TCP/IP is being used to ensure bi-directional communication between server and client.
-
-### Structure of the Server Code
-[TODO]
-
-### Server <-> Client Sequence Diagram
-[TODO]
