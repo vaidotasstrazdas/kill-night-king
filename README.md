@@ -30,3 +30,9 @@ What is **0,0**? It is you archer's position. It is not validated currently, so 
 - Qt Creator as a tool to build, debug the server, create UI views, write code and unit tests testing the code written. However, there a better choice would be CMake, Visual Studio, BOOST for build and unit tests organization (it is easier to make this work in cross-platform way). Still, due to time limitation, I have chosen the way which would be faster in short-term.
 - Qt as a framework to create a server, UI views, view models. Specifically, **QTcpServer** is used as a server instance which allows to listen to connections from client, and **QTcpSocket** as instance to accept incoming streams from clients, and write response to it.
 - In other words, TCP/IP is being used to ensure bi-directional communication between server and client.
+
+### How to Build and Run
+- Download Qt5.8.0. It can be downloaded from http://download.qt.io/official_releases/qt/5.8/5.8.0/ .
+- Run Qt Creator.
+- Using Qt Creator, build and run the project.
+- **Note.** Qt is cross-platform framework, so it should build properly on all most popular platforms. However, it was tested on Windows 7 and macOS Sierra Version 10.12.6, so I can not guarantee that it will really build on any other platforms than the mentioned ones.
